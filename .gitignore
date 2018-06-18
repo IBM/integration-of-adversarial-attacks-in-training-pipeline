@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+.venv/
+manifest.yml
+*sample*
+*model*
+*.py
+*.npz
+report.txt
