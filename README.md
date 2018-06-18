@@ -2,9 +2,10 @@
 
 # Jupyter Notebook Using FfDL with ART to Test the Robustness of Deep Learning Models
 
-This [Jupyter](http://jupyter.org/install) notebook trains a Fashion MNIST model with [Fabric for Deep Learning (FfDL)](https://github.com/IBM/FfDL) on a Kubernetes Cluster
-and uses the [Adversarial Robustness Toolbox (ART)](https://github.com/IBM/adversarial-robustness-toolbox) to generate 
-adversarial samples and test the robustness of the model against adversarial attacks.
+This [Jupyter](http://jupyter.org/install) notebook trains a [Fashion MNIST](#dataset) model with 
+[Fabric for Deep Learning (FfDL)](https://github.com/IBM/FfDL) on a Kubernetes Cluster and uses the 
+[Adversarial Robustness Toolbox (ART)](https://github.com/IBM/adversarial-robustness-toolbox) to generate adversarial 
+samples and test the robustness of the model against adversarial attacks.
 
 The [notebook](ART_with_FfDL.ipynb) is structured into sections which can be run as a whole or in individual pieces like
 the model training or adversarial attacks on a trained model.
@@ -28,24 +29,12 @@ the model training or adversarial attacks on a trained model.
    robustness metrics and compare model predictions on adversarial samples to predictions on the original test images.
    
    ![model predictions on adversarial samples](images/adv_sample_predictions.png)
-
    
 5. **Summary and next steps** - This notebook showed how to use Jupyter notebooks to interact with a FfDL cluster and 
    how the Adversarial Robustness Toolbox can be integrated into a deep learning pipeline. To learn more about ART go to
    https://github.com/IBM/adversarial-robustness-toolbox
 
 Follow the [Prerequisites](#prerequisites) and the [Setup](#setup) steps below before [Running the Notebook](#running-the-notebook).
-
-
-## Dataset
-
-Fashion-MNIST is a [dataset of clothing images](https://github.com/zalandoresearch/fashion-mnist) provided by 
-[Zalando Research](https://research.zalando.com/). It is intended to serve as a direct drop-in replacement for the 
-original MNIST dataset of hand-written digits for benchmarking Machine Learning algorithms. The Fashion-MNIST dataset 
-is split into 60,000 training examples and 10,000 test examples. Each example is a 28x28 grayscale image, associated 
-with a label from 10 classes.
-
-![Fashion-MNIST](https://github.com/IBM/Fashion-MNIST-using-FfDL/blob/master/fashion-mnist-webapp/static/img/p1.png)
 
 
 ## Prerequisites
@@ -123,6 +112,17 @@ To delete the Python virtual environment run the following command
 ```bash
 rm -rf .venv/ffdl_art
 ```
+
+
+## Dataset
+
+Fashion-MNIST is a [dataset of clothing images](https://github.com/zalandoresearch/fashion-mnist) provided by 
+[Zalando Research](https://research.zalando.com/). It is intended to serve as a direct drop-in replacement for the 
+original MNIST dataset of hand-written digits for benchmarking Machine Learning algorithms. The Fashion-MNIST dataset 
+is split into 60,000 training examples and 10,000 test examples. Each example is a 28x28 grayscale image, associated 
+with a label from 10 classes.
+
+![Fashion-MNIST](https://github.com/IBM/Fashion-MNIST-using-FfDL/blob/master/fashion-mnist-webapp/static/img/p1.png)
 
 
 ## Acknowledgements
