@@ -1,11 +1,15 @@
-![FfDL](images/ffdl.png)
+# Jupyter Notebook using FfDL with Adversarial Robustness Toolbox to test the robustness of Deep Learning Models
 
-# Jupyter Notebook Using FfDL with ART to Test the Robustness of Deep Learning Models
+The [Adversarial Robustness Toolbox (ART)](https://github.com/IBM/adversarial-robustness-toolbox), an open source software library, supports both researchers and developers in defending deep neural networks against adversarial attacks, making AI systems more secure. Its purpose is to allow rapid crafting and analysis of attack and defense methods for machine learning models.
+
+[Fabric for Deep Learning (FfDL, pronounced “fiddle”)](https://github.com/IBM/FfDL) provides a consistent way to run deep-learning frameworks such as TensorFlow, PyTorch, Caffe, Keras etc. as a service on Kubernetes.
 
 This [Jupyter](http://jupyter.org/install) notebook trains a [Fashion MNIST](#dataset) model with 
 [Fabric for Deep Learning (FfDL)](https://github.com/IBM/FfDL) on a Kubernetes Cluster and uses the 
 [Adversarial Robustness Toolbox (ART)](https://github.com/IBM/adversarial-robustness-toolbox) to generate adversarial 
 samples and test the robustness of the model against adversarial attacks.
+
+![FfDL](images/ffdl-art-jupyter.png)
 
 The [notebook](ART_with_FfDL.ipynb) is structured into sections which can be run as a whole or in individual pieces like
 the model training or adversarial attacks on a trained model.
